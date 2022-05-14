@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=divce-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>landing page</title>
+        <link rel="styleshet" href="sun1.css"/>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    </head>
+    <style>
+      body{
+            background-image: url(/home/shruti/picture/wallpaper/day2);
+            background-repeat: no-repeat;        
+            background-size: 10 100px;
+            background-image: url(" https://i.pinimg.com/1200x/04/93/03/049303db768ac01e7af0dc09f9df6f2a.jpg " )
+        }
+        header{
+            position: relative;
+            top: 1%;
+            width: 90%;
+            padding: 11px 110px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo{
+            
+            position: relative;
+            color:black;
+            font-size: 40px;
+            text-decoration:snone;
+            text-transform:uppercase;
+            font-weight: 800;
+            letter-spacing: 1px;
+        }
+        header .navigation a{
+            color: #000;
+            text-decoration: none;
+            font-weight: 500;
+            letter-spacing: 1px;
+            padding: 2px 15px;
+            border-radius: 20px;
+            transition: 0.4s;
+            transition-property: background;
+        }
+        header .navigation a:not(:last-child){
+            margin-right: 30px;
+        }
+
+        header .navigation a:hover{
+            background: rgb(161, 75, 75);
+        }
+        .contact{
+            max-width: 500px;
+            
+            
+        }
+        .contact a:not(:last-child){
+            margin-right: 40px;
+        }
+        .contact .info h2{
+            color:rgb(48, 116, 161);
+            font-size: 50px;
+            text-transform: uppercase;
+            font-weight: 800;
+            letter-spacing: 3px;
+            line-height: 60px;
+            margin-right: 70px;
+            text-decoration: solid;
+
+        }
+        .contact .info h2 span{
+            color: rgb(223, 205, 102);
+            font-size: 50px;
+            font-weight: 600;
+        }
+        .contact .info p{
+            font-size: 16px;
+            font-weight: 500;
+            margin-bottom: 40px;
+            margin: 40px 30px;
+            max-width: 300px;
+        }
+        .contact .info-btn{
+            color: #fff;
+            background:  #226A80;
+            text-decoration: none;
+            text-transform: uppercase;
+            font-weight: 700;
+            letter-spacing: 7px;
+            padding: 10px 20px;
+            border-radius: 5px; 
+            transition: 0.4s;
+            transition-property: background;
+
+        }
+        
+        .contact .info-btn:hover{
+            background: #0C4F60;
+        }
+        
+        .media-icons{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin:auto ;
+        }
+        .media-icons a{
+            position: relative;
+            color: #111;
+            font-size: 25px;
+            transition-property: tranform;
+        }
+        .media-icons a:not(:last-child){
+            margin-right: 80px;
+        }
+        .media-icons a:hover{
+            transform: scale(1.5);
+        }
+       
+        header .logo{
+            position: absolute;
+            bottom: -6px;
+        }
+        .contact .info h2{
+            font-size: 45px;
+            line-height: 50px;    
+
+        }
+        .contact .info h2 span{
+            font-size: 40px;
+            font-weight: 600;
+        }
+        .contact .info p{
+            font-size: 14px;
+
+        }
+        @media (max-width:560px){
+            .contact .info h2{
+                font-size: 35px;
+                line-height: 40px;
+            }
+            .contact .info h2 span{
+                font-size: 30px;
+            font-weight: 600;
+        }
+            .contact .info p{
+                font-size: 14px;
+            
+        }
+        .text h2{
+            color:rgb(48, 116, 161);
+            font-size: 50px;
+            text-transform: uppercase;
+            padding-left: 40px;
+    }    
+    * {
+        box-sizing: border-box;
+        }
+        .responsive {
+            padding: 0 6px;
+            float: left;
+            width: 24.99999%;
+        }
+    }
+.clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: courier;
+        }
+        input{
+            display: none;
+        }
+        .container{
+            width: 100%;
+            text-align: center;
+            margin-right: 40px;
+        }
+        .container h1{
+            font-weight: normal;
+            font-size: 40px;
+            position:relative;
+            margin: 40px 0;
+        }
+        
+        h1:before{
+            content: '';
+            position:absolute;
+            width: 100px;
+            height: 4px;
+            background-color: #226A80;
+            bottom: -10px;
+            left: 50%;
+            transform: translate(-50%);
+            animation: animate 5s linear infinite;
+        }
+        @keyframes animate{
+            0%{
+                width: 100%;
+            }
+            50%{
+                width: 200px;
+
+            }
+            100%{
+                width: 100px;
+            }
+        }
+        .top-contact{
+            background-color:bisque;
+            width:90%;
+            margin: 0 auto 20px auto;
+            height: 50px;
+            display: flex;
+            align-items: center;
+            border-radius: 5px;
+            box-shadow: 3px 3px;
+        }
+        h3{
+            height: 100%;
+            background-color:bisque;
+            line-height: 60px;
+            padding:  0 50px;
+            color:#111;
+        }
+        label{
+            display: inline-block;
+            height: 100%;
+            margin-right: 50px;
+            line-height: 60px;
+            font-size: 18px;
+            color:#000;
+            cursor: pointer;
+            transition: color .5s;
+        }
+        label:hover{
+            color:cadetblue;
+        }
+        
+        .cam{
+            width: 100%;
+            margin: auto;
+            display: grid;
+            grid-template-columns:repeat(4 ,1fr);
+            grid-gap:20px;
+            }
+        .ck{
+            position: relative;
+            height: 200px;
+            border-radius: 10px;
+            box-shadow: 3px 3px 5px lightseagreen;
+            cursor: pointer;
+        }
+        
+        
+        .ck img{
+            height: 100%;
+            width: 100%;
+
+        }
+       
+
+        
+        .natual img{
+            width: 100%;
+            height:100%;
+            border-radius: 10px;
+            transition: -5s;
+        }
+        .flower img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            transition: -5s;
+        }
+        .sky img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+            transition: -5s ;
+        }
+        .ck::before{
+            content: "cam";
+            position:absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: antiquewhite;
+            font-size: 25px;
+            font-weight: bold;
+            width:100%;
+            margin-top: -100px;
+            opacity: 0;
+            transition: .3s;
+            transition-delay: .2s; 
+            z-index: 1;
+        }
+        .ck::after{
+            content: "";
+            position: absolute;
+            width: 200%;
+            bottom: 0;
+            left: 0;
+            border-radius: 10px;
+            height: 0;
+            background-color:rgba(176, 236, 213, 0.4);
+            transition: .3s;
+        }
+        .ck:hover::after{
+            height: 100%;
+        }  
+        .ck:hover::before{
+            margin-top: 0;
+            opacity: 1;
+        }
+          
+</style>
+<body>
+<section>
+    <header>
+        <h2><a href="#" class="logo" ></a>
+        <i class="fa fa-camera" style="font-size:48px;color:black"></i></h2>
+        <div class="navigation">
+        <a href="#">About me</a>
+                        <a href="#">Service</a>
+                        <a href="#">Stages work</a>
+                        <a href="#">Reviews</a>
+                        <a href="#">contact</a>
+                    </div>
+                                
+                </header>
+            <div class="contact" >
+                <div class="info">
+
+                    <h2 style="font-family:courier"> <b>Life is short.<br><span>capture every moment</span></h2>
+                    <h2 style="font-size:500%;">
+                    <h2 style="font-variant-position: center;"></h2>
+                    <p><i>“The photographer is an armed version of the solitary walker reconnoitering, stalking, cruising the urban inferno, the voyeuristic stroller who discovers the city as a landscape of voluptuous extremes. Adept of the joys of watching, connoisseur of empathy, the flâneur finds the world 'picturesque.”
+                <br><br>
+                    <a href="#" class="info-btn">More </a>    
+                
+                </div>
+            </div>   
+        
+            <div>
+                <input type="radio" name="Photos" id="check1">
+                <input type="radio" name="Photos" id="check2">
+                <input type="radio" name="Photos" id="check3">
+                <input type="radio" name="Photos" id="check4">
+                
+                <div class="container">
+                    <h1>OUR PHOTO ALLMUB</h1>
+                <div class="top-contact">
+                    <h3>welcome</h3>
+                    <label for="check1">ALL </label>
+                    <label for="check2">Nature </label>
+                    <label for="check3"> flower </label>
+                    <label for="check4">sky </label>
+            </div>
+                <div class="cam">
+                <div class="ck natual">
+            
+                <img src="https://travel.home.sndimg.com/content/dam/images/travel/fullset/2016/02/top-10-natural-wonders/top-10-natural-wonders-mount-everest.jpg.rend.hgtvcom.966.725.suffix/1491592786041.jpeg" alt="Cinque Terre" width="90px" height="10px">
+            </div>
+                
+                <div class="ck flower">
+            
+                <img src="https://images.unsplash.com/photo-1530092285049-1c42085fd395?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8d2hpdGUlMjBmbG93ZXJ8ZW58MHx8MHx8&w=1000&q=80"bbbbbbbbbbbbbbbbbbbbbbbbbbbbb width="300px" height="200px">
+                
+            </div>
+                <div class="ck sky">
+                
+                <img src="https://images.unsplash.com/photo-1536532184021-da5392b55da1?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Ymx1ZSUyMHNreXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="Northern Lights" width="300px" height="200px">
+                
+            </div>
+                
+                    <div class="ck flower">
+                    
+                    <img src="https://www.thoughtco.com/thmb/U3uVJMsgzLd00DbkIicnnIYM_kM=/1414x1414/smart/filters:no_upscale()/lotus-flower-828457262-5c6334b646e0fb0001dcd75a.jpg" alt="Forest" width="300px" height="200px">
+                
+                </div>    
+                    <div class="ck sky">
+                    
+                    <img src="https://media.istockphoto.com/photos/amazing-cloudscape-on-the-sky-picture-id697120006?k=20&m=697120006&s=612x612&w=0&h=8_RDLb28E5ps3cBD5LfaZQrZtttYwUrfoeBwnbdjO3w=" alt="Northern Lights" width="300px" height="200px">
+                    
+                </div>    
+
+                    <div class="ck natual">
+                        
+                        <img src=https://images.unsplash.com/photo-1620766165457-a8025baa82e0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bmF0dXJlJTIwb2YlMjBpbmRpYXxlbnwwfHwwfHw%3D&w=1000&q=80" alt="Cinque Terre" width="300px" height="200px">
+                        
+                    </div>    
+
+                        
+                        <div class="ck flower">
+                    
+                        <img src="https://thumbs.dreamstime.com/b/spring-flowers-blue-crocuses-drops-water-backgro-background-tracks-rain-113784722.jpg" alt="Forest" width="300px" height="200px">
+                        
+                    </div>    
+
+                        <div class="ck sky">
+                        
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4f/Blue_Sky%2C_Dhaka%2C_Bangladesh.jpg/220px-Blue_Sky%2C_Dhaka%2C_Bangladesh.jpg" alt="Northern Lights" width="300px" height="200px">
+                        
+                    </div>    
+                <div class="ck sky">
+                    <img src="https://photographylife.com/wp-content/uploads/2017/01/Best-of-2016-Nasim-Mansurov-20.jpg "width="300px" height="200px">
+                </div>
+                <div class="ck flower">
+                    <img src=" https://ichef.bbci.co.uk/news/976/cpsprodpb/957C/production/_111686283_pic1.png "width="300px" height="200px">
+                </div>
+                <div class="ck natual">
+                        
+                    <img src=" https://www.greenqueen.com.hk/wp-content/uploads/2021/06/WEF-Investments-In-Nature-Based-Solutions-Have-To-Triple-By-2030-To-Address-Climate-Change-Biodiversity-Loss.jpg" alt="Cinque Terre" width="300px" height="100px">
+                    
+                    
+                </div>    
+                <div class="ck sky">
+                
+                    <img src="https://www.photographymad.com/files/images/man-on-beach.jpg ">
+        
+            </div>
+               
+                <br>
+            <div class="media-icons">
+            <a href="#"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#"><i class="fa-brands fa- fa-twitter"></i></a>
+        </a>
+        </div>
+    </section>      
+        </body><
